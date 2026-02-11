@@ -7,7 +7,7 @@ nlp = spacy.load("en_core_web_sm")
 
 app = Flask(__name__)
 
-client = OpenAI(api_key="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")
+client = OpenAI()
 
 @app.route("/")
 def home():
@@ -75,3 +75,4 @@ Speech:
 
 if __name__ == "__main__":
     app.run(debug=True)
+
